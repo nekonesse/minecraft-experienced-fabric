@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraft-experienced",
+	"version": "${version}",
+	"name": "Minecraft: Experienced",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"nekonesse"
+	],
+	"contact": {
+		"sources": "https://github.com/nekonesse/minecraft-experienced-fabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minecraft-experienced-fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nekonesse.minecraftexp.MinecraftExperiencedFabric"
+		],
+		"fabric-datagen": [
+			"nekonesse.minecraftexp.MinecraftExperiencedFabricDataGenerator"
+		],
+		"client": [
+			"nekonesse.minecraftexp.MinecraftExperiencedFabricClient"
+		]
+	},
+	"mixins": [
+		"minecraft-experienced-fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
