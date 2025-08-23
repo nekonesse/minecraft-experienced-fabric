@@ -1,5 +1,6 @@
 package nekonesse.minecraftexp;
 
+import nekonesse.minecraftexp.block.ExperiencedBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class MinecraftExperiencedFabric implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ExperiencedBlocks.registerModBlocks();
 	}
 }

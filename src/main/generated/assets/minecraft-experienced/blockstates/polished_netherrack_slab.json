@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft-experienced:block/polished_netherrack_slab"
+    },
+    "type=double": {
+      "model": "minecraft-experienced:block/polished_netherrack"
+    },
+    "type=top": {
+      "model": "minecraft-experienced:block/polished_netherrack_slab_top"
+    }
+  }
+}

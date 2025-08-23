@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft-experienced:cracked_polished_andesite",
+    "minecraft-experienced:polished_andesite_wall",
+    "minecraft-experienced:cracked_polished_granite",
+    "minecraft-experienced:polished_granite_wall",
+    "minecraft-experienced:cracked_polished_granite",
+    "minecraft-experienced:polished_granite_wall",
+    "minecraft-experienced:cobblestone_bricks",
+    "minecraft-experienced:chiseled_cobblestone_bricks",
+    "minecraft-experienced:layered_cobblestone_bricks",
+    "minecraft-experienced:stacked_cobblestone_bricks",
+    "minecraft-experienced:cut_cobblestone_bricks",
+    "minecraft-experienced:small_cobblestone_bricks",
+    "minecraft-experienced:triple_cobblestone_bricks",
+    "minecraft-experienced:layered_stone_bricks",
+    "minecraft-experienced:stacked_stone_bricks",
+    "minecraft-experienced:cut_stone_bricks",
+    "minecraft-experienced:small_stone_bricks",
+    "minecraft-experienced:triple_stone_bricks",
+    "minecraft-experienced:polished_netherrack",
+    "minecraft-experienced:polished_netherrack_slab",
+    "minecraft-experienced:polished_netherrack_stairs",
+    "minecraft-experienced:polished_netherrack_wall",
+    "minecraft-experienced:polished_netherrack_bricks",
+    "minecraft-experienced:layered_polished_netherrack",
+    "minecraft-experienced:cut_polished_netherrack",
+    "minecraft-experienced:polished_netherrack_pillar"
+  ]
+}
