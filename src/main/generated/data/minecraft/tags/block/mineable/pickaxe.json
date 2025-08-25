@@ -6,8 +6,14 @@
     "minecraft-experienced:polished_granite_wall",
     "minecraft-experienced:cracked_polished_granite",
     "minecraft-experienced:polished_granite_wall",
+    "minecraft-experienced:prismarine_brick_wall",
+    "minecraft-experienced:dark_prismarine_wall",
     "minecraft-experienced:cobblestone_bricks",
+    "minecraft-experienced:cobblestone_brick_slab",
+    "minecraft-experienced:cobblestone_brick_stairs",
+    "minecraft-experienced:cobblestone_brick_wall",
     "minecraft-experienced:chiseled_cobblestone_bricks",
+    "minecraft-experienced:cracked_cobblestone_bricks",
     "minecraft-experienced:layered_cobblestone_bricks",
     "minecraft-experienced:stacked_cobblestone_bricks",
     "minecraft-experienced:cut_cobblestone_bricks",
@@ -23,8 +29,14 @@
     "minecraft-experienced:polished_netherrack_stairs",
     "minecraft-experienced:polished_netherrack_wall",
     "minecraft-experienced:polished_netherrack_bricks",
+    "minecraft-experienced:polished_netherrack_brick_slab",
+    "minecraft-experienced:polished_netherrack_brick_stairs",
+    "minecraft-experienced:polished_netherrack_brick_wall",
     "minecraft-experienced:layered_polished_netherrack",
     "minecraft-experienced:cut_polished_netherrack",
-    "minecraft-experienced:polished_netherrack_pillar"
+    "minecraft-experienced:polished_netherrack_pillar",
+    "minecraft-experienced:red_nether_brick_fence",
+    "minecraft-experienced:cracked_red_nether_bricks",
+    "minecraft-experienced:chiseled_red_nether_bricks"
   ]
 }

@@ -47,7 +47,23 @@ public class ExperiencedBlocks {
             Block::new,
             AbstractBlock.Settings.copy(Blocks.COBBLESTONE),
             true);
+    public static final Block COBBLESTONE_BRICK_SLAB = register("cobblestone_brick_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.copy(COBBLESTONE_BRICKS),
+            true);
+    public static final Block COBBLESTONE_BRICK_STAIRS = register("cobblestone_brick_stairs",
+            settings -> new StairsBlock(COBBLESTONE_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.copy(COBBLESTONE_BRICKS),
+            true);
+    public static final Block COBBLESTONE_BRICK_WALL = register("cobblestone_brick_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.copy(COBBLESTONE_BRICKS),
+            true);
     public static final Block CHISELED_COBBLESTONE_BRICKS = register("chiseled_cobblestone_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(COBBLESTONE_BRICKS),
+            true);
+    public static final Block CRACKED_COBBLESTONE_BRICKS = register("cracked_cobblestone_bricks",
             Block::new,
             AbstractBlock.Settings.copy(COBBLESTONE_BRICKS),
             true);
@@ -92,14 +108,15 @@ public class ExperiencedBlocks {
             Block::new,
             AbstractBlock.Settings.copy(Blocks.STONE_BRICKS),
             true);
+    //SMOOTH STONE
+    public static final Block SMOOTH_STONE_STAIRS = register("smooth_stone_stairs",
+            settings -> new StairsBlock(Blocks.SMOOTH_STONE.getDefaultState(), settings),
+            AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE),
+            true);
     //POLISHED NETHERRACK
     public static final Block POLISHED_NETHERRACK = register("polished_netherrack",
             Block::new,
             AbstractBlock.Settings.copy(Blocks.NETHER_BRICKS).strength(2f),
-            true);
-    public static final Block POLISHED_NETHERRACK_BRICKS = register("polished_netherrack_bricks",
-            Block::new,
-            AbstractBlock.Settings.copy(POLISHED_NETHERRACK),
             true);
     public static final Block POLISHED_NETHERRACK_SLAB = register("polished_netherrack_slab",
             SlabBlock::new,
@@ -113,6 +130,22 @@ public class ExperiencedBlocks {
             WallBlock::new,
             AbstractBlock.Settings.copy(POLISHED_NETHERRACK),
             true);
+    public static final Block POLISHED_NETHERRACK_BRICKS = register("polished_netherrack_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(POLISHED_NETHERRACK),
+            true);
+    public static final Block POLISHED_NETHERRACK_BRICK_SLAB = register("polished_netherrack_brick_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.copy(POLISHED_NETHERRACK_BRICKS),
+            true);
+    public static final Block POLISHED_NETHERRACK_BRICK_STAIRS = register("polished_netherrack_brick_stairs",
+            settings -> new StairsBlock(POLISHED_NETHERRACK_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.copy(POLISHED_NETHERRACK_BRICKS),
+            true);
+    public static final Block POLISHED_NETHERRACK_BRICK_WALL = register("polished_netherrack_brick_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.copy(POLISHED_NETHERRACK_BRICKS),
+            true);
     public static final Block LAYERED_POLISHED_NETHERRACK = register("layered_polished_netherrack",
             Block::new,
             AbstractBlock.Settings.copy(POLISHED_NETHERRACK),
@@ -124,6 +157,28 @@ public class ExperiencedBlocks {
     public static final Block POLISHED_NETHERRACK_PILLAR = register("polished_netherrack_pillar",
             PillarBlock::new,
             AbstractBlock.Settings.copy(POLISHED_NETHERRACK),
+            true);
+    //PRISMARINE
+    public static final Block PRISMARINE_BRICK_WALL = register("prismarine_brick_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PRISMARINE_BRICKS),
+            true);
+    public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.copy(Blocks.DARK_PRISMARINE),
+            true);
+    //RED NETHER BRICK
+    public static final Block RED_NETHER_BRICK_FENCE = register("red_nether_brick_fence",
+            FenceBlock::new,
+            AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS),
+            true);
+    public static final Block CRACKED_RED_NETHER_BRICKS = register("cracked_red_nether_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS),
+            true);
+    public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS),
             true);
 
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
@@ -151,13 +206,18 @@ public class ExperiencedBlocks {
     private static void registerTabs() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.addAfter(Blocks.COBBLESTONE_WALL,COBBLESTONE_BRICKS);
-            entries.addAfter(COBBLESTONE_BRICKS,LAYERED_COBBLESTONE_BRICKS);
+            entries.addAfter(COBBLESTONE_BRICKS,COBBLESTONE_BRICK_STAIRS);
+            entries.addAfter(COBBLESTONE_BRICK_STAIRS,COBBLESTONE_BRICK_SLAB);
+            entries.addAfter(COBBLESTONE_BRICK_SLAB,COBBLESTONE_BRICK_WALL);
+            entries.addAfter(COBBLESTONE_BRICK_WALL,CRACKED_COBBLESTONE_BRICKS);
+            entries.addAfter(CRACKED_COBBLESTONE_BRICKS,CHISELED_COBBLESTONE_BRICKS);
+            entries.addAfter(CHISELED_COBBLESTONE_BRICKS,LAYERED_COBBLESTONE_BRICKS);
             entries.addAfter(LAYERED_COBBLESTONE_BRICKS,STACKED_COBBLESTONE_BRICKS);
             entries.addAfter(STACKED_COBBLESTONE_BRICKS,CUT_COBBLESTONE_BRICKS);
             entries.addAfter(CUT_COBBLESTONE_BRICKS,SMALL_COBBLESTONE_BRICKS);
             entries.addAfter(SMALL_COBBLESTONE_BRICKS,TRIPLE_COBBLESTONE_BRICKS);
 
-            entries.addAfter(Blocks.STONE_BRICKS,LAYERED_STONE_BRICKS);
+            entries.addAfter(Blocks.STONE_BRICK_WALL,LAYERED_STONE_BRICKS);
             entries.addAfter(LAYERED_STONE_BRICKS,STACKED_STONE_BRICKS);
             entries.addAfter(STACKED_STONE_BRICKS,CUT_STONE_BRICKS);
             entries.addAfter(CUT_STONE_BRICKS,SMALL_STONE_BRICKS);
@@ -174,6 +234,9 @@ public class ExperiencedBlocks {
             entries.addAfter(POLISHED_NETHERRACK_STAIRS, POLISHED_NETHERRACK_SLAB);
             entries.addAfter(POLISHED_NETHERRACK_SLAB, POLISHED_NETHERRACK_WALL);
             entries.addAfter(POLISHED_NETHERRACK_WALL,POLISHED_NETHERRACK_BRICKS);
+            entries.addAfter(POLISHED_NETHERRACK_BRICKS,POLISHED_NETHERRACK_BRICK_STAIRS);
+            entries.addAfter(POLISHED_NETHERRACK_BRICK_STAIRS,POLISHED_NETHERRACK_BRICK_SLAB);
+            entries.addAfter(POLISHED_NETHERRACK_BRICK_SLAB,POLISHED_NETHERRACK_BRICK_WALL);
             entries.addAfter(POLISHED_NETHERRACK_BRICKS,LAYERED_POLISHED_NETHERRACK);
             entries.addAfter(LAYERED_POLISHED_NETHERRACK,CUT_POLISHED_NETHERRACK);
             entries.addAfter(CUT_POLISHED_NETHERRACK,POLISHED_NETHERRACK_PILLAR);
@@ -186,6 +249,13 @@ public class ExperiencedBlocks {
 
             entries.addAfter(Blocks.POLISHED_GRANITE_SLAB,POLISHED_GRANITE_WALL);
             entries.addAfter(POLISHED_GRANITE_WALL,CRACKED_POLISHED_GRANITE);
+
+            entries.addAfter(Blocks.RED_NETHER_BRICK_WALL,RED_NETHER_BRICK_FENCE);
+            entries.addAfter(RED_NETHER_BRICK_FENCE,CRACKED_RED_NETHER_BRICKS);
+            entries.addAfter(CRACKED_RED_NETHER_BRICKS,CHISELED_RED_NETHER_BRICKS);
+
+            entries.addAfter(Blocks.PRISMARINE_BRICK_SLAB,PRISMARINE_BRICK_WALL);
+            entries.addAfter(Blocks.DARK_PRISMARINE_SLAB,DARK_PRISMARINE_WALL);
         });
         /*ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE_BLOCKS).register(entries -> {
             entries.addBefore(Blocks.RAIL,WOODEN_RAIL);

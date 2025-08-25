@@ -1,2 +1,4 @@
 // 1.21.8	-999999999-01-01T00:00:00	Minecraft: Experienced/Tags for minecraft:block
-169f7d97a4d4a3b8fc587d131fcf891f64070fb6 data/minecraft/tags/block/mineable/pickaxe.json
+624ba6d9fcc68370e2ccbd44cb34b243e2e56ca3 data/minecraft/tags/block/fences.json
+1bfaee40ac1aab98a2e2f62063f6cccf1449a4c4 data/minecraft/tags/block/mineable/pickaxe.json
+432a0d8f204df5c8000d659f92b4e7bbfad30073 data/minecraft/tags/block/walls.json

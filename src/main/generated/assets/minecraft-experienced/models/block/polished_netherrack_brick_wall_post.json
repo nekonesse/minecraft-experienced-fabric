@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "minecraft-experienced:block/polished_netherrack_bricks"
+  }
+}

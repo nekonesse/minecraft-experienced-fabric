@@ -27,7 +27,11 @@ public class ExperiencedModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool polishedDioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
         polishedDioritePool.wall(ExperiencedBlocks.POLISHED_DIORITE_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.COBBLESTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cobblestoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ExperiencedBlocks.COBBLESTONE_BRICKS);
+        cobblestoneBrickPool.slab(ExperiencedBlocks.COBBLESTONE_BRICK_SLAB);
+        cobblestoneBrickPool.stairs(ExperiencedBlocks.COBBLESTONE_BRICK_STAIRS);
+        cobblestoneBrickPool.wall(ExperiencedBlocks.COBBLESTONE_BRICK_WALL);
+        blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.CRACKED_COBBLESTONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.CHISELED_COBBLESTONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.LAYERED_COBBLESTONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.STACKED_COBBLESTONE_BRICKS);
@@ -40,16 +44,28 @@ public class ExperiencedModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.SMALL_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.TRIPLE_STONE_BRICKS);
 
-        //blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.POLISHED_NETHERRACK);
         BlockStateModelGenerator.BlockTexturePool polishedNetherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ExperiencedBlocks.POLISHED_NETHERRACK);
         polishedNetherrackPool.stairs(ExperiencedBlocks.POLISHED_NETHERRACK_STAIRS);
         polishedNetherrackPool.slab(ExperiencedBlocks.POLISHED_NETHERRACK_SLAB);
         polishedNetherrackPool.wall(ExperiencedBlocks.POLISHED_NETHERRACK_WALL);
-        blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.POLISHED_NETHERRACK_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool polishedNetherrackBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ExperiencedBlocks.POLISHED_NETHERRACK_BRICKS);
+        polishedNetherrackBrickPool.stairs(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_STAIRS);
+        polishedNetherrackBrickPool.slab(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_SLAB);
+        polishedNetherrackBrickPool.wall(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_WALL);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.LAYERED_POLISHED_NETHERRACK);
         blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.CUT_POLISHED_NETHERRACK);
         blockStateModelGenerator.registerAxisRotated(ExperiencedBlocks.POLISHED_NETHERRACK_PILLAR, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
 
+        BlockStateModelGenerator.BlockTexturePool redNetherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
+        redNetherBrickPool.fence(ExperiencedBlocks.RED_NETHER_BRICK_FENCE);
+        blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.CHISELED_RED_NETHER_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ExperiencedBlocks.CRACKED_RED_NETHER_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool prismarineBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PRISMARINE_BRICKS);
+        prismarineBrickPool.wall(ExperiencedBlocks.PRISMARINE_BRICK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool darkPrismarinePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.DARK_PRISMARINE);
+        darkPrismarinePool.wall(ExperiencedBlocks.DARK_PRISMARINE_WALL);
     }
 
     @Override

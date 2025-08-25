@@ -23,8 +23,14 @@ public class ExperiencedBlockTagProvider extends FabricTagProvider.BlockTagProvi
                 .add(ExperiencedBlocks.POLISHED_GRANITE_WALL)
                 .add(ExperiencedBlocks.CRACKED_POLISHED_GRANITE)
                 .add(ExperiencedBlocks.POLISHED_GRANITE_WALL)
+                .add(ExperiencedBlocks.PRISMARINE_BRICK_WALL)
+                .add(ExperiencedBlocks.DARK_PRISMARINE_WALL)
                 .add(ExperiencedBlocks.COBBLESTONE_BRICKS)
+                .add(ExperiencedBlocks.COBBLESTONE_BRICK_SLAB)
+                .add(ExperiencedBlocks.COBBLESTONE_BRICK_STAIRS)
+                .add(ExperiencedBlocks.COBBLESTONE_BRICK_WALL)
                 .add(ExperiencedBlocks.CHISELED_COBBLESTONE_BRICKS)
+                .add(ExperiencedBlocks.CRACKED_COBBLESTONE_BRICKS)
                 .add(ExperiencedBlocks.LAYERED_COBBLESTONE_BRICKS)
                 .add(ExperiencedBlocks.STACKED_COBBLESTONE_BRICKS)
                 .add(ExperiencedBlocks.CUT_COBBLESTONE_BRICKS)
@@ -40,9 +46,27 @@ public class ExperiencedBlockTagProvider extends FabricTagProvider.BlockTagProvi
                 .add(ExperiencedBlocks.POLISHED_NETHERRACK_STAIRS)
                 .add(ExperiencedBlocks.POLISHED_NETHERRACK_WALL)
                 .add(ExperiencedBlocks.POLISHED_NETHERRACK_BRICKS)
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_SLAB)
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_STAIRS)
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_WALL)
                 .add(ExperiencedBlocks.LAYERED_POLISHED_NETHERRACK)
                 .add(ExperiencedBlocks.CUT_POLISHED_NETHERRACK)
-                .add(ExperiencedBlocks.POLISHED_NETHERRACK_PILLAR);
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_PILLAR)
+                .add(ExperiencedBlocks.RED_NETHER_BRICK_FENCE)
+                .add(ExperiencedBlocks.CRACKED_RED_NETHER_BRICKS)
+                .add(ExperiencedBlocks.CHISELED_RED_NETHER_BRICKS);
 
+        valueLookupBuilder(BlockTags.FENCES)
+                .add(ExperiencedBlocks.RED_NETHER_BRICK_FENCE);
+
+        valueLookupBuilder(BlockTags.WALLS)
+                .add(ExperiencedBlocks.POLISHED_ANDESITE_WALL)
+                .add(ExperiencedBlocks.POLISHED_GRANITE_WALL)
+                .add(ExperiencedBlocks.POLISHED_DIORITE_WALL)
+                .add(ExperiencedBlocks.COBBLESTONE_BRICK_WALL)
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_WALL)
+                .add(ExperiencedBlocks.POLISHED_NETHERRACK_BRICK_WALL)
+                .add(ExperiencedBlocks.PRISMARINE_BRICK_WALL)
+                .add(ExperiencedBlocks.DARK_PRISMARINE_WALL);
     }
 }

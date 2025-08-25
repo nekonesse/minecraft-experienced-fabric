@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "minecraft-experienced:block/polished_netherrack_bricks",
+    "side": "minecraft-experienced:block/polished_netherrack_bricks",
+    "top": "minecraft-experienced:block/polished_netherrack_bricks"
+  }
+}
